@@ -1,21 +1,7 @@
-import { Menu as AntdMenu, Avatar, Space } from 'antd';
-import {
-  TeamOutlined,
-  CalendarOutlined,
-  ShareAltOutlined,
-  HomeOutlined,
-  FileTextOutlined,
-  LayoutOutlined,
-  HeartOutlined,
-  SettingOutlined
-} from '@ant-design/icons';
-import type { MenuProps } from 'antd';
+import { Menu as AntdMenu, Avatar } from 'antd';
 import { Icon } from '@iconify/react';
 
 const Menu = () => {
-  const onClick: MenuProps['onClick'] = (e) => {
-    console.log('click ', e);
-  };
   const menuItems = [
     {
       key: '1',
@@ -81,7 +67,9 @@ const Menu = () => {
           marginTop: '30vh'
         }}
       />
-      <Avatar className="bg-blue-200 text-blue-700 mx-auto">AS</Avatar>
+      <Avatar className="bg-blue-200 text-blue-700 block w-[40px] h-[40px] mx-auto mb-10">
+        AS
+      </Avatar>
     </AntdMenu>
   );
 };
